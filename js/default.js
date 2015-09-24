@@ -313,7 +313,7 @@ var $optionSets = $('nav.primary ul'),
         $('.slider-parallax').css('padding-top', $(window).height() + 'px');
     });
 
-    function wpgmappitymappity_maps_loaded() {
+    function wpgmappity_maps_loaded() {
         /* googleMaps Footer Map */
         var bluegray = "#768FAC"
         var black = "-100"
