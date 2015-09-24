@@ -216,8 +216,9 @@ $(document).ready(function(){
 		var marker0= new google.maps.Marker({
 		 position : point0,
 		 map : wpgmappitymap,
-		 icon: pointerUrl //Custom Pointer URL
-		 });
+		 icon: pointerUrl, //Custom Pointer URL
+		title:"The Fine Mousse" 
+		});
 		google.maps.event.addListener(marker0,'click',
 		 function() {
 		 var infowindow = new google.maps.InfoWindow(
