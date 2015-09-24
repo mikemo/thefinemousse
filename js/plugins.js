@@ -29,7 +29,7 @@ $(document).ready(function(){
  
     
 	
-	var currentColor = 'bluegray';
+	var currentColor = 'red';
 	$('body').addClass(currentColor);
 
 	$('.picker-bluegray').click(function(){
@@ -97,7 +97,7 @@ $(document).ready(function(){
 		var orange = "#fda527"
 		var red = "#CA0021" // orange is FF4F00
 
-		var color = bluegray // set your map color here! (blue, black, green, yellow, purple, orange...)
+		var color = black // set your map color here! (blue, black, green, yellow, purple, orange...)
 		var saturation = 100
 		function wpgmappity_maps_loaded() {
 			var pointerUrl = 'images/map/pointer-'+currentColor+'.png' // set your color pointer here! (pointer-blue/green/yellow/fucsia/purple/turquoise/red/orange.png)
@@ -216,13 +216,12 @@ $(document).ready(function(){
 		var marker0= new google.maps.Marker({
 		 position : point0,
 		 map : wpgmappitymap,
-		 icon: pointerUrl, //Custom Pointer URL
-		title:"The Fine Mousse" 
+		 icon: pointerUrl
 		});
 		google.maps.event.addListener(marker0,'click',
 		 function() {
 		 var infowindow = new google.maps.InfoWindow(
-		 {content: 'undefined'});
+		 {content: 'The Fine Mousse'});
 		 infowindow.open(wpgmappitymap,marker0);
 		 });
 		}
