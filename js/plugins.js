@@ -191,6 +191,13 @@ $(document).ready(function(){
 					{"gamma": 1}
 				]
 			}
+			
+				"featureType": "poi.business",
+				"elementType": "labels",
+				"stylers": [
+					{"visibility": "off"}
+				]
+			}
 		];		
 		var options = {
 		 center : latlng,
