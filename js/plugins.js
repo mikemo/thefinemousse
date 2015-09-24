@@ -97,10 +97,11 @@ $(document).ready(function(){
 		var orange = "#fda527"
 		var red = "#CA0021" // orange is FF4F00
 
-		var color = black // set your map color here! (blue, black, green, yellow, purple, orange...)
+		var color = "bluegray" // set your map color here! (blue, black, green, yellow, purple, orange...)
+		var pointerColor = "orange"
 		var saturation = 100
 		function wpgmappity_maps_loaded() {
-			var pointerUrl = 'images/map/pointer-'+currentColor+'.png' // set your color pointer here! (pointer-blue/green/yellow/fucsia/purple/turquoise/red/orange.png)
+			var pointerUrl = 'images/map/pointer-'+pointerColor+'.png' // set your color pointer here! (pointer-blue/green/yellow/fucsia/purple/turquoise/red/orange.png)
 			switch(currentColor) {
             	case ('bluegray'):
 			    var color = bluegray;
@@ -221,7 +222,7 @@ $(document).ready(function(){
 		google.maps.event.addListener(marker0,'click',
 		 function() {
 		 var infowindow = new google.maps.InfoWindow(
-		 {content: 'The Fine Mousse'});
+		 {content: 'The Fine Mousse<BR>1098 Jackson Street'});
 		 infowindow.open(wpgmappitymap,marker0);
 		 });
 		}
