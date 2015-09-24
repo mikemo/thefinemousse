@@ -135,7 +135,7 @@ $(document).ready(function(){
 				var saturation = 100;
                 break;
         }	
-		var latlng = new google.maps.LatLng(40.712503557180824,-74.00073790361023); <!-- (Fist Value Longitude, Second Value Latitude), can obtain YOUR coordenates here!: http://universimmedia.pagesperso-orange.fr/geo/loc.htm -->
+		var latlng = new google.maps.LatLng(37.79539,-122.41312); <!-- (Fist Value Lat, Second Value Long), can obtain YOUR coordenates here!: http://universimmedia.pagesperso-orange.fr/geo/loc.htm -->
 		var styles = [
 			{
 				"featureType": "landscape",

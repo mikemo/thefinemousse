@@ -313,7 +313,7 @@ var $optionSets = $('nav.primary ul'),
         $('.slider-parallax').css('padding-top', $(window).height() + 'px');
     });
 
-    function wpgmappity_maps_loaded() {
+    function wpgmappitymappity_maps_loaded() {
         /* googleMaps Footer Map */
         var bluegray = "#768FAC"
         var black = "-100"
@@ -324,7 +324,7 @@ var $optionSets = $('nav.primary ul'),
         var red = "#f2333a"
         var turquoise = "#29deb5"
 
-        var color = red; // set your map color here! (blue, black, green, yellow, purple, orange...)
+        var color = blue; // set your map color here! (blue, black, green, yellow, purple, orange...)
         var saturation = 100;
         var pointerUrl = 'images/map/pointer.png'; // set your color pointer here! (pointer-blue/green/yellow/fucsia/purple/turquoise/red/orange.png)
         switch(color) {
