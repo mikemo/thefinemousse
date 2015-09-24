@@ -29,7 +29,7 @@ $(document).ready(function(){
  
     
 	
-	var currentColor = 'red';
+	var currentColor = 'bluegray';
 	$('body').addClass(currentColor);
 
 	$('.picker-bluegray').click(function(){
