@@ -95,7 +95,7 @@ $(document).ready(function(){
 		var yellow = "#CBB774"
 		var gold = "#B5AD6C"
 		var orange = "#fda527"
-		var red = "#FF4F00" // used to be "#CA0021"
+		var red = "#CA0021" // orange is FF4F00
 
 		var color = bluegray // set your map color here! (blue, black, green, yellow, purple, orange...)
 		var saturation = 100
