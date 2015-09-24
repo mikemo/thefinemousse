@@ -190,8 +190,8 @@ $(document).ready(function(){
 					{"lightness": 25},
 					{"gamma": 1}
 				]
-			},
-			
+			}
+			{
 				"featureType": "poi.business",
 				"elementType": "labels",
 				"stylers": [
