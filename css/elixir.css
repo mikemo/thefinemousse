@@ -3092,7 +3092,7 @@ span.dark {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     /* Retina-specific stuff here */
     section.timetable{
-		background: url("../images/parallax/opening_hours.jpg");
+/*	background-image: url("../images/parallax/opening_hours.jpg");*/ /*mike cut this out */
 		background-size: cover;
 		/* custom background-position */
     	background-position:50% 50%;
