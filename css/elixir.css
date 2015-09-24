@@ -2826,10 +2826,10 @@ section.menu .title:before, section.menu .title:after {
 }
 
 .logointro {
-		width: 40%;/*mike changed from 160px */
-		height: 40%;/*mike changed from 137px */
+		width: 216px; /*mike changed from 160px */
+		height: 50%;/*mike changed from 137px */
 		background-size: cover;
-		margin-top: 160px;
+		margin-top: 50px;/*mike changed from 160px */
 		margin-bottom: 10px;
 
 }
