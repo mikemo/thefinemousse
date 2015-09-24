@@ -1057,7 +1057,7 @@ section.dark textarea{
 
 section.timetable {
 /*	background-image: url("../images/parallax/opening_hours.jpg"); /*mike cut this out */
-	background-color: #091523; /* mike added this */
+	background-color: #0C0C64; /* mike added this */
 	padding-top: 30px;
 	padding-bottom: 40px;
 	min-height: 528px;
@@ -1109,7 +1109,7 @@ section.timetable h2.section-title:before, section.timetable h2.section-title:af
 }
 
 section.timetable .section-subtitle {
-	color: #dd0301;
+	color: #FF4F00; /* mike changed this from #dd0301; */
 	font-family: "BitterRegular";
 	font-style: italic;
 	font-size: 20px;
