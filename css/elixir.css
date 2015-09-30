@@ -123,12 +123,12 @@ a:hover {text-decoration: none;}
 
 @font-face {
     font-family: FrontageRegular;
-    src: url(../fonts/frontage-regular.otf);
+    src: url(../fonts/frontage-regular.eot);
 }
 
 @font-face {
     font-family: FrontageBold;
-    src: url(../fonts/frontage-bold.otf);
+    src: url(../fonts/frontage-bold.eot);
 }
 
 
@@ -140,7 +140,7 @@ a:hover {text-decoration: none;}
 
 @font-face {
     font-family: BrandonMedium;
-    src: url(../fonts/bBrandon_med.otf);
+    src: url(../fonts/Brandon_med.otf);
 }
 
 
