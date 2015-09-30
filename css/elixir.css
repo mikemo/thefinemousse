@@ -121,6 +121,28 @@ a:hover {text-decoration: none;}
     src: url(../fonts/LobsterTwo-BoldItalic.otf);
 }
 
+@font-face {
+    font-family: FrontageRegular;
+    src: url(../fonts/frontage-regular.otf);
+}
+
+@font-face {
+    font-family: FrontageBold;
+    src: url(../fonts/frontage-bold.otf);
+}
+
+
+@font-face {
+    font-family: BrandonGrotesqueMedium;
+    src: url(../fonts/brandongrotesque-black-webfont.ttf);
+}
+
+
+@font-face {
+    font-family: BrandonMedium;
+    src: url(../fonts/bBrandon_med.otf);
+}
+
 
 /* ==============================
    4. Page loader
@@ -705,12 +727,14 @@ a:hover {text-decoration: none;}
 
 .logointro {
 	display: block;
-		width: 216px;
-		height: 275px;
+		width: 310px; /* was 216px*/
+		height: 395px;/* was 275px*/
 		background:url("../images/logo_intro_2.png");
 		background-repeat: no-repeat;
+		background-size: 310px 395px;/* added this; here is how you make bigger*/
 		margin:-42px auto;
 		margin-bottom: 42px;
+		margin-top: -132px;/* added this*/
 		content: " ";
 		-webkit-transition: all 0.5s ease;
 		-o-transition: all 0.5s ease;
@@ -786,7 +810,7 @@ a:hover {text-decoration: none;}
 		margin-top:0px;
 	}
 		#owl-main-text h2 {
-			font-family: 'Oswald', sans-serif;
+			font-family: 'BrandonGrotesqueMedium', sans-serif; /* mike changed this from Oswald */
 			font-size: 65px;
 			text-align: center;
 			color: #fff;
@@ -801,7 +825,7 @@ a:hover {text-decoration: none;}
 			color: #fff;
 			text-align: center;
 			font-weight: 300;
-			font-family: 'BitterRegular', serif;
+			font-family: 'BrandonGrotesqueMedium', serif;/* mike changed this from BitterRegular */
 			position: relative;
 			left: 0px;
 			width: 100%;
@@ -812,12 +836,17 @@ a:hover {text-decoration: none;}
 	}
 	.slide-sep {
 		display: block;
-		width: 148px;
-		height: 22px;
-		background:url("../images/slide-separator.png");
+		width: 200px; /*mike changed from 148px */
+		height: 3px; /*mike changed from 22px */
+	
+	/*	background:url("../images/slide-separator.png");   mike edited this out */
+		
+		background-color:#ff5000;/*mike added */
+		
+		
 		background-repeat: no-repeat;
 		margin:-42px auto;
-		margin-bottom: 42px;
+		margin-bottom: 22px; /*mike changed from 42px */
 		content: " ";
 		-webkit-transition: all 0.5s ease;
 		-o-transition: all 0.5s ease;
@@ -883,15 +912,26 @@ a:hover {text-decoration: none;}
 .section.about .jt_row {padding-bottom:55px;}
 
 .section.dark {
-	background: #091523;
+	background: #6faadc; /* mike changed from 091523 */
 }
 
 .section.dark h2{
 	color: #ffffff;
 }
 
+.wings:before, .wings:after {
+
+/*	content:url("../images/header_decorator.png"); mike removed becauase it's red */
+
+	margin: 14px;
+	color: #D1BC87;
+	vertical-align: text-bottom;
+
+}
+
+
 .section.dark h2.section-title:before, .section.dark h2.section-title:after {
-	content:url("../images/header_decorator_dark.png");
+/*	content:url("../images/header_decorator_dark.png"); mike removed becauase it's red */
 	margin: 14px;
 	color: #D1BC87;
 	vertical-align: text-bottom;
@@ -976,7 +1016,7 @@ section.dark textarea{
 
 		h2.section-title {
 			text-align: center;
-			font-family: "BitterRegular";
+			font-family: "BrandonGrotesqueMedium";  /* mike changed this from BitterRegular */
 			font-weight: 400;
 			font-size: 28px;
 			color:#383733;
@@ -985,7 +1025,7 @@ section.dark textarea{
 		}
 
 		h2.section-title:before, h2.section-title:after {
-			content:url("../images/header_decorator.png");
+		/*	content:url("../images/header_decorator.png"); mike removed becauase it's red */
 			margin: 14px;
 			color: #D1BC87;
 			vertical-align: text-bottom;
@@ -993,7 +1033,7 @@ section.dark textarea{
 
 		.section-subtitle {
 			text-align: center;
-			font-family: "BitterRegular";
+			font-family: "BrandonMedium"; /* mike changed this from BitterRegular */
 			font-size: 16px;
 			color:#777777;
 			margin-bottom: 60px;
@@ -1061,6 +1101,7 @@ section.timetable {
 	padding-top: 30px;
 	padding-bottom: 40px;
 	min-height: 528px;
+/*	height:1000px; /* mike added this */
 }
 
 .opening-hours {
@@ -1072,7 +1113,7 @@ section.timetable {
 	display: inline-block;
 	width: 200px;
 	height: 110px;
-	background:url("../images/timetable-decorator.png");
+/*	content:url("../images/header_decorator.png"); mike removed becauase it's red */
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: " ";
@@ -1095,11 +1136,11 @@ section.timetable {
 
 section.timetable h2{
 	color: #ffffff;
-	font-family: "Oswald", sans-serif;
+	font-family: "BrandonMedium", sans-serif;  /* mike changed this from Oswald */
 	font-size: 39px;
 	font-weight: 700;
 	padding-top: 4px;
-	line-height: 110px;
+	line-height: 90px;  /* mike changed this from 110px */
 	vertical-align: top;
 }
 
@@ -1109,8 +1150,8 @@ section.timetable h2.section-title:before, section.timetable h2.section-title:af
 }
 
 section.timetable .section-subtitle {
-	color: #FF4F00; /* mike changed this from #dd0301; */
-	font-family: "BitterRegular";
+	color: #ff5000; /* mike changed this from #dd0301; */ 
+	font-family: "BrandonMedium";/* mike changed this from BitterRegular */
 	font-style: italic;
 	font-size: 20px;
 	margin-bottom: 15px;
@@ -1843,7 +1884,7 @@ a.button.contact:hover, .button.contact:hover {
    ============================== */
 
 #footer {
-	background:#091523;
+	background:#ee8863; /*mike changed this from.. #091523 */
 	text-align: center;
 	font-size: 20px;
 	color:#606060;
@@ -1901,7 +1942,7 @@ margin-bottom: 10px;
 		list-style: none;
 	}
 		#footer .social li .icon {
-			background: #3D3C38;
+			background: #706f68; /* mike changed from #3D3C38; */
 			display: inline-block;
 			width: 60px;
 			height: 60px;
