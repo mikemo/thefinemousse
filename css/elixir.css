@@ -836,8 +836,8 @@ a:hover {text-decoration: none;}
 	}
 	.slide-sep {
 		display: block;
-		width: 500px; /*mike changed from 148px */
-		height: 8px; /*mike changed from 22px */
+		width: 300px; /*mike changed from 148px */
+		height: 5px; /*mike changed from 22px */
 	
 	/*	background:url("../images/slide-separator.png");   mike edited this out */
 		
