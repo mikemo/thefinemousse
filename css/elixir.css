@@ -836,7 +836,7 @@ a:hover {text-decoration: none;}
 	}
 	.slide-sep {
 		display: block;
-		width: 280px; /*mike changed from 148px */
+		width: 50%; /*mike changed from 148px */
 		height: 5px; /*mike changed from 22px */
 	
 	/*	background:url("../images/slide-separator.png");   mike edited this out */
@@ -851,6 +851,15 @@ a:hover {text-decoration: none;}
 		-webkit-transition: all 0.5s ease;
 		-o-transition: all 0.5s ease;
 		transition: all 0.5s ease;
+		
+		
+	
+		   -moz-border-radius: 30px;
+		   -webkit-border-radius: 30px;
+		   border-radius: 30px; /* future proofing */
+		   -khtml-border-radius: 30px; /* for old Konqueror browsers */
+
+		
 	}
 
 	.ornament {
