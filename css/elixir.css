@@ -334,7 +334,8 @@ a:hover {text-decoration: none;}
 	float: left;
 	width: 110px;
 	height: 50px;
-	background: url("../images/logo_elixir.png") no-repeat;
+	margin-top: -7px; /* added */
+	background: url("../images/mouse_head.jpg") no-repeat;  /* change to go here */
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -346,10 +347,10 @@ a:hover {text-decoration: none;}
 	left: 0px;
 	z-index:1001;
 	width: 100%;
-	height: 90px;
+	height: 60px;
 	font-family: 'Open Sans', sans-serif;
-	background: rgba(12,12,13,0.78);
-	padding-top: 20px;
+	background: #FFFFFF;  /* changed from rgba(12,12,13,0.78); */
+	padding-top: 10px;/* changed from 20px */
 }
 	#header .container {width: 97%;}
 	.navbar-collapse {padding-right:0px;}
@@ -377,7 +378,7 @@ a:hover {text-decoration: none;}
 		display: block;
 		position: absolute;
 		left: 100px;
-		top: 12px;
+	/*	top: 12px; */
 	}
 
 
@@ -406,7 +407,7 @@ a:hover {text-decoration: none;}
 
 	#header.overflow.fixed .navbar-brand.mini.darker {display: none;}
 
-	#header .navbar-brand {padding:10px 0px;}
+	#header .navbar-brand { padding:0px 0px; }
 
 	.navbar-brand.mini { display: none; }
 
@@ -455,7 +456,7 @@ a:hover {text-decoration: none;}
 	}
 
 	#header .menu-item a {
-		color:#fff;
+		color:#818181;    /* changed from #fff */
 		text-transform: uppercase;
 		font-size: 14px;
 		font-family: 'Bitter', sans-serif;
@@ -727,18 +728,28 @@ a:hover {text-decoration: none;}
 
 .logointro {
 	display: block;
-		width: 310px; /* was 216px*/
-		height: 395px;/* was 275px*/
+		width: 216px; /* was 216px*/
+		height: 275px;/* was 275px*/
 		background:url("../images/logo_intro_2.png");
 		background-repeat: no-repeat;
-		background-size: 310px 395px;/* added this; here is how you make bigger*/
-		margin:-42px auto;
-		margin-bottom: 42px;
-		margin-top: -132px;/* added this*/
+/*		background-size: 216px 275px;/* added this; here is how you make bigger*/
+/*		 background-position: center; */
+			margin: auto;
+	/*	margin:-42px auto;  */
+		margin-bottom: 42px; 
+/*		margin-top: -132px;/* added this*/
 		content: " ";
 		-webkit-transition: all 0.5s ease;
 		-o-transition: all 0.5s ease;
 		transition: all 0.5s ease;
+		
+		
+		   -moz-border-radius: 30px;
+		   -webkit-border-radius: 30px;
+		   border-radius: 30px; /* future proofing */
+		   -khtml-border-radius: 30px; /* for old Konqueror browsers */
+		
+		
 }
 
 .mouse {
@@ -1216,7 +1227,7 @@ section.timetable .column-divider{
 section.menu {
 	padding-bottom: 40px;
 	padding-top: 0px;
-	background-image: url("../images/menu_left.jpg"), url("../images/menu_right.jpg");
+/*	background-image: url("../images/menu_left.jpg"), url("../images/menu_right.jpg"); */
 	background-position: top left, top right;
 	background-repeat: no-repeat;
 	min-height: 950px;
