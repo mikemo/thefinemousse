@@ -1118,9 +1118,9 @@ section.dark textarea{
 section.timetable {
 /*	background-image: url("../images/parallax/opening_hours.jpg");*/ /*mike cut this out */
 	background-color: #091523; /* mike added this */
-	padding-top: 30px;
-	padding-bottom: 40px;
-	min-height: 528px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	min-height: 628px; /*mike changed this from 528px */
 /*	height:1000px; /* mike added this */
 }
 
@@ -1367,8 +1367,8 @@ a.button.menu, .button.menu{
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 16px;
-	color: #8DA03C;
-	border: 2px solid #8DA03C;
+	color: #2E3192;
+	border: 2px solid #2E3192;
 	padding: 20px 10px;
 	margin-top: 68px;
 	margin-bottom: 23px;
@@ -1381,7 +1381,7 @@ a.button.menu, .button.menu{
 }
 
 a.button.menu:hover, .button.menu:hover {
-	background: #8DA03C;
+	background: #D3E5F4; /*mike changed this */
 	color: #ffffff;
 }
 
