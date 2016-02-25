@@ -149,7 +149,7 @@ a:hover {text-decoration: none;}
    ============================== */
 
 #mask {
-    background-color: #000000;
+    background-color: #FFFFFF;
     height: 100%;
     position: fixed;
     width: 100%;
@@ -157,11 +157,14 @@ a:hover {text-decoration: none;}
 }
 .loader {
   position: absolute;
-  width: 80px;
-  height:80px;
-  margin: -20px 0 0 -20px;
+  /* margin: -220px 0 0 -180px; */
   top:50%;
   left:50%;
+	margin-left:-20%;
+	margin-top:-20%;
+
+
+
 }
 
 /* ==============================
@@ -872,6 +875,34 @@ a:hover {text-decoration: none;}
 
 		
 	}
+	
+	.slide-sep-red {
+		display: block;
+		width: 50%; /*mike changed from 148px */
+		height: 3px; /*mike changed from 22px */
+	
+	/*	background:url("../images/slide-separator.png");   mike edited this out */
+		
+		background-color:#B7072F;/*mike added */
+		
+		
+		background-repeat: no-repeat;
+		margin:-42px auto;
+		margin-bottom: 22px; /*mike changed from 42px */
+		content: " ";
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		
+		
+	
+		   -moz-border-radius: 30px;
+		   -webkit-border-radius: 30px;
+		   border-radius: 30px; /* future proofing */
+		   -khtml-border-radius: 30px; /* for old Konqueror browsers */
+
+		
+	}
 
 	.ornament {
 		display: block;
@@ -1117,10 +1148,10 @@ section.dark textarea{
 
 section.timetable {
 /*	background-image: url("../images/parallax/opening_hours.jpg");*/ /*mike cut this out */
-	background-color: #091523; /* mike added this */
+	background-color:#F0F8FF; /* #091523 #6faadc rgb(46, 49, 146) mike added this */
 	padding-top: 60px;
 	padding-bottom: 60px;
-	min-height: 628px; /*mike changed this from 528px */
+	min-height: 528px; /*mike changed this from 528px to 628px then back */
 /*	height:1000px; /* mike added this */
 }
 
@@ -1172,7 +1203,7 @@ section.timetable h2.section-title:before, section.timetable h2.section-title:af
 section.timetable .section-subtitle {
 	color: #ff5000; /* mike changed this from #dd0301; */ 
 	font-family: "BrandonMedium";/* mike changed this from BitterRegular */
-	font-style: italic;
+/*	font-style: italic; */
 	font-size: 20px;
 	margin-bottom: 15px;
 	margin-top: -105px;
@@ -1636,9 +1667,11 @@ section.testimonials {
 
 .testimonials_img {
 	display: block;
-	width: 130px;
-	height: 130px;
-	background:url("../images/testimonials_logo.png");
+/* 	width: 130px; 
+	height: 130px; */
+		width: 216px; 
+		height: 275px;
+	background:url("../images/logo_intro_2.png") no-repeat;	 
 	margin:0 auto;
 	content: " ";
 	-webkit-transition: all 0.5s ease;
@@ -1666,14 +1699,14 @@ section.testimonials h2 span {
 }
 
 section.testimonials h2:after {
-	content:'';
+/*	content:'';
 	width:40px;
 	height:3px;
 	background:#e2e9ed;
 	position:absolute;
 	bottom:-5px;
 	left: 36px;
-
+*/
 }
 
 section.testimonials h2:before, section.testimonials h2:after {
@@ -1681,26 +1714,29 @@ section.testimonials h2:before, section.testimonials h2:after {
 }
 
 .item p{
-	font-family: "BitterRegular", sans-serif;
+	font-family: "BrandonGrotesqueBold", sans-serif;
 	text-align: left;
 	font-weight: 400;
-	color: #e2e9ed;
-	font-size: 22px;
-	line-height: 1.8em;
-	margin-top: 30px;
+/*	color: #e2e9ed; */
+	color: #000000;
+	/*font-size: 22px; */
+		font-size: 20px;
+/*	line-height: 1.8em; */
+	margin-top: 0px;
 	margin-bottom: 30px;
+	margin-right:350px; /*mike added */
 }
 
 .item span.author{
-	font-family: "Bitter", sans-serif;
-	font-style: italic;
+	font-family: "BrandonGrotesqueBold", sans-serif;
+/*	font-style: italic; */
 	font-size: 20px;
 	color: #B7072F;
 	float: left;
 }
 
 .item span.author:before {
-	content: "- ";
+/*	content: "- "; */
 }
 
 
@@ -1838,7 +1874,9 @@ a.button.contact:hover, .button.contact:hover {
 	.project-slide.carousel-wrapper.with_pagination .owl-pagination {margin-top:15px;}
 	.carousel-wrapper.with_pagination .owl-theme .owl-controls .owl-page span {
 		border-radius: 100px;
-		border: 2px solid #8DA03C;
+/*		border: 2px solid #8DA03C; */
+			border: 2px solid #c02530; /* changed color */
+
 		width: 12px;
 		height: 12px;
 		background: transparent;
@@ -1849,7 +1887,7 @@ a.button.contact:hover, .button.contact:hover {
 			background: #C1A667;
 		}
 		.testimonials.carousel-wrapper.with_pagination .owl-theme .owl-controls .owl-page span {background: transparent; }
-		.testimonials.carousel-wrapper.with_pagination .owl-controls .owl-page.active span, .testimonials.carousel-wrapper.with_pagination .owl-controls.clickable .owl-page:hover span {background:#8DA03C;}
+		.testimonials.carousel-wrapper.with_pagination .owl-controls .owl-page.active span, .testimonials.carousel-wrapper.with_pagination .owl-controls.clickable .owl-page:hover span {background:#c02530;} /*changed color */
 
 	.carousel-wrapper.with_pagination #owl-story .owl-pagination {margin-bottom:130px;}
 	.carousel-wrapper.with_pagination #owl-services .owl-pagination {margin-bottom:130px;}

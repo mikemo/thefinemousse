@@ -253,6 +253,19 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $("#owl-about3").owlCarousel({
+      navigation : false,
+      pagination: false,
+      autoPlay: true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true,
+      transitionStyle: "fade",
+
+    });
+});
+
 
 
 /**** GALLERY ****/
