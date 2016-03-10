@@ -1261,7 +1261,7 @@ section.menu {
 /*	background-image: url("../images/menu_left.jpg"), url("../images/menu_right.jpg"); */
 	background-position: top left, top right;
 	background-repeat: no-repeat;
-	min-height: 950px;
+	min-height: 150px; /* changed from 950px */
 }
 
 section.menu h3{
